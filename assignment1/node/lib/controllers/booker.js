@@ -5,7 +5,7 @@ const Models = require('../models/');
 module.exports = {
   all: (request, reply) => {
     var options = {};
-
+    // TODO: escape strings
     if (request.query.limit)
       options['limit'] = request.query.limit;
 
